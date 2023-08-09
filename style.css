@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;40;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+h1 {
+    font-family: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 1.8.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-family: 21.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: 1rem;
+    font-weight: 400;
+    color: #f75a8e;
+}
+
+h6 {
+    color: blanchedalmond;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700 ;
+    outline: none;
+    border-radius: 5px;
+    background-color: #E91E63;
+    color: white;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+button:hover{
+    background-color: #f75a8e;
+    color: white;
+    border-radius: 10px;
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: #f75a8e;
+}
+ .star{
+    padding: 10px 0;
+ }
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+/*    nav bar   */
+
+.navbar{
+    font-size:  16px; ;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(243, 197, 197, 0.7);
+}
+.navbar-light .navbar-nav .nav-link{
+   padding: 0 20px;
+   color: black;
+   transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link:active,
+.navbar i:active{
+    color:  #f75a8e;
+}
+.navbar i{
+    font-size: 1.4rem;
+    padding: 0px 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/*Mobile nav bar*/
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+    
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    
+    transition: 0.3s ease;
+}
+#bar:hover,
+#bar:active{
+    color: #be003fe5;
+}
+
+
+@media only screen and (max-width:991px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color:white ;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color:#be003fe5;
+    }
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+    
+}
+
+
+/* section home */
+
+#home span{
+    color: #E91E63; 
+}
+#home{
+    background-image: url("(Image Files) Ecommerce Website Using HTML And CSS Step By Step/img/back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* section brand*/
+
+
+
+/* section new*/
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(243, 197, 197, 0.7);
+}
+
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover{
+    color: #E91E63;
+    background-color:  rgba(243, 197, 197, 0.7);
+    border-bottom: wheat;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(4) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(5) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+#new .one:nth-child(6) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+
+/* product */
+ .product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+ }
+ .product img{
+    transition: 0.3s all;
+ }
+ .product img:hover{
+    opacity: 0.7;
+ }
+ .product .buy-btn{
+    background-color:#E91E63;
+    transform: translateY(20px);
+    transition: 0.3s all;
+    opacity: 0;
+ }
+ .product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+ }
+ .buy-btn:hover,
+ .buy-btn:active{
+    background-color: #f75a8e;
+    transition: 0.3s all;
+    color: black;
+ }
+
+ /* banner */
+ #banner{
+    background-image: url("(Image Files) Ecommerce Website Using HTML And CSS Step By Step/img/banner/2.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ #banner h4{
+    color: #2a2a2a;
+ }
+ #banner h1{
+    color: #E91E63;
+ }
+ h1 span{
+    color: aliceblue;
+ }
+ #banner button{
+    background-color: #a5083c;
+    border-radius: 10px;
+ }
+ #banner button:hover,
+ #banner button:active{
+    
+    background-color: beige;
+    color: #E91E63;
+    border-radius: 15px;
+ }
+
+ footer{
+    background-color: #2a2a2a;
+ }
+ footer h5{
+    color: #E91E63;
+    font-weight: 700;
+    font-size: 1.2rem;
+ }
+
+ footer li{
+    padding: 4px;
+ }
+ footer li a{
+    font-size: 0.8rem;
+    color: aliceblue;
+ }
+ footer li a:hover{
+    color:#f75a8e;
+ }
+ footer p{
+    color: coral;
+    font-size: 0.8rem
+}
+
+footer .copy-right a{
+    color: #2a2a2a;
+    width: 38px;
+    height: 38px;
+    background-color: antiquewhite;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    transition: 0.3s;
+    margin: 0.5px;
+    border-radius: 50%;
+}
+footer .copy-right a:hover{
+    color: #f75a8e;
+    background-color: #2a2a2a;
+}
+
+
+
+
+
+
+
+/*    blog  */
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#blog-container .post img{
+    transition: 0.3s ease;
+}
+#blog-container .post:hover img{
+    transform: scale(1.3) rotate(-10deg);
+    opacity: 0.8;
+}
+#blog-container .post h3{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#blog-container .post:hover h3{
+    color:  #a5083c;
+}
+
+
+
+
+/*  CART*/
+#cart-container{
+    overflow-x: auto;
+}
+
+
+
+#cart-container table{
+   border-collapse: collapse;
+   width: 100%;
+   table-layout: fixed;
+   white-space: norap;
+}
+#cart-container table thead{
+   font-weight: 700;
+}
+#cart-container table thead td{
+   background-color: coral;
+   color: #0f0e0e;
+   border: none;
+   padding: 6px 0px;
+}
+#cart-container table td{
+   border: 1px solid #b6b3b3;
+   text-align: center;
+
+}
+#cart-container table td:nth-child(1){
+   width: 100px;
+}
+#cart-container table td:nth-child(2)
+#cart-container table td:nth-child(3){
+   width: 200px;
+}
+#cart-container table td:nth-child(4)
+#cart-container table td:nth-child(5)
+#cart-container table td:nth-child(6){
+   width: 170px;
+}
+
+#cart-container table tbody img{
+   width: 100px;
+   height: 80px;
+   object-fit: cover;
+}
+#cart-botton .coupon>div,
+#cart-botton .total>div{
+   border: 1px solid #b6b3b3
+
+}
+#cart-botton .coupon h5,
+#cart-botton .total h5{
+   background-color: rgb(233, 112, 68);
+   color: #0f0e0e;
+   border: none;
+   padding: 6px 12px;
+   font-weight: 700;
+
+}
+#cart-botton .coupon p,
+#cart-botton .coupon input {
+   padding: 0 12px;
+}
+#cart-botton .coupon input{
+   height: 44px;
+}
+#cart-botton .coupon input,
+#cart-botton .coupon button{
+   margin: 0 0 20px 12px;
+}
+#cart-botton.total div>div{
+   padding: 0 12px;
+}
+#cart-botton.total h6{
+   color: #2a2a2a;
+}
+.second-hr{
+   background: rgb(233, 112, 68);
+   width: 100%;
+}
+
+#cart-botton .total  div>button{
+   margin: 0 12px 20px 0pxS;
+   display: flex;
+   justify-content: flex-end;
+
+}
+h6 {
+   color: #0f0e0e;
+}
